@@ -17,7 +17,7 @@ CREATE TABLE category(
 category_id INT PRIMARY KEY NOT NULL,
 name TEXT NOT NULL)
 
-CREATE TABLE (
+CREATE TABLE orders (
 order_id INT PRIMARY KEY NOT NULL,
 date_time INT NOT NULL,
 address TEXT NOT NULL,
@@ -33,5 +33,13 @@ amount INT NOT NULL,
 PRIMARY KEY (order_id, product_id)
 FOREIGN KEY (order_id) REFERENCES orders(order_id),
 FOREIGN KEY (product_id) REFERENCES products(product_id))
+
+
+-- B
+nutritions- יחיד לרבים 
+products- יחיד לרבים
+category- יחיד ליחיד
+orders- יחיד ליחיד  
+products_orders- רבים לרבים
 
 
